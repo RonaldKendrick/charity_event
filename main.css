@@ -8,8 +8,9 @@ div.container {
   grid-template-columns: 1fr;
   grid-template-areas:
     "header"
-    "about"
+    "hero"
     "event"
+    "about"
     "signup"
     "footer";
 
@@ -46,9 +47,18 @@ section#signup {
   grid-area: signup;
 }
 
+section#hero {
+  grid-area: hero;
+  background-color: #ff6677;
+}
+
 footer {
   background-color: #ffff99;
   grid-area: footer;
+}
+
+img {
+  max-width: 100%;
 }
 
 @media (min-width: 800px) {
@@ -56,8 +66,9 @@ footer {
     grid-template-columns: 1fr 1fr;
     grid-template-areas:
       "header header"
-      "event event"
-      "about signup"
+      "hero hero"
+      "about about"
+      "event signup"
       "footer footer";
   }
 }
