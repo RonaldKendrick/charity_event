@@ -23,7 +23,7 @@ header {
   background-color: #99ffff;
   grid-area: header;
   text-align: center;
-  font-size: 30px;
+  font-size: 25px;
 }
 
 main {
@@ -37,21 +37,29 @@ section {
 section#about {
   background-color: #9999ff;
   grid-area: about;
+  padding: 12px;
 }
 
 section#event {
   background-color: #99ff99;
   grid-area: event;
+  padding: 12px;
+  text-align: center;
+
 }
 
 section#signup {
   background-color: #ff9999;
   grid-area: signup;
+  padding: 12px;
+  font-size: 13px;
+
 }
 
 section#hero {
   grid-area: hero;
-  background-color: #ff6677;
+  background-color: #000000;
+  display: none;
 }
 
 footer {
@@ -60,7 +68,11 @@ footer {
 }
 
 img {
-  max-width: 100%;
+max-width: 100%;
+}
+
+table {
+  width: 100%;
 }
 
 @media (min-width: 800px) {
@@ -72,5 +84,38 @@ img {
       "about about"
       "event signup"
       "footer footer";
+  }
+
+  section#hero {
+    display: block;
+  }
+
+  table {
+    width: 100%;
+    padding: 10px;
+  }
+
+  thead {
+    display: none;
+    padding: 10px;
+
+  }
+
+  tr {
+    margin-top: 7px;
+    margin-bottom: 7px;
+    padding: 10px;
+
+  }
+
+  td {
+    padding: 10px;
+  }
+
+  td:before {
+    content: attr(aria-label);
+    float: left;
+    font-weight: bold;
+    padding: 10px;
   }
 }

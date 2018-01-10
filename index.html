@@ -5,6 +5,8 @@
   <title>WWF Charity Event</title>
   <link href="main.css" rel="stylesheet">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://unpkg.com/purecss@1.0.0/build/pure-min.css"
+  integrity="sha384-nn4HPE8lTHyVtfCBi5yW9d20FjT8BJwUXyWZT9InLYax14RDjBj46LmSztkmNP9w" crossorigin="anonymous">
 </head>
 
 <body>
@@ -20,36 +22,97 @@
     </section>
 
     <section id="about">
-      <p>The WWF is a non-profit charity to stop the degradation of our planet’s natural environment.
+      <h2><p>The <a href="https://www.worldwildlife.org/">WWF</a> is a non-profit charity to stop the degradation of our planet’s natural environment.
       They rescue and help endangered animals that are at the risk of extinction.
       The WWF mainly focus on two branches, biodiversity and reducing human footprint in nature.
       They also try to ensure that the use of renewable resources remains sustainable.
       The WWF has more than 13,000 projects in which they have invested over $10 Billion in.
       The WWF partners with many other large organizations such as the UN.
       For some projects, they also team up with industrial businesses to try
-      and reduce the smog they put out into the air. </p>
+      and reduce the smog they put out into the air. </p></h2>
     </section>
 
     <section id="event">
-      <p>The WWF Charity Organization will be holding a bowling night! You can bring friends and family.
-        If you are interested, please sign up!</p>
+      <h2><p>The WWF Charity Organization will be holding a bowling night! You can bring friends and family.
+        If you are interested, please sign up!</p></h2>
+
+        <table>
+          <caption><b>Percentage of the charity's total expenses spent on programs and services</b></caption>
+
+            <thead>
+              <tr>
+                <th>Program Expenses</th>
+                <th>Administrative Expenses</th>
+                <th>Fundraising Expenses</th>
+                <th>Fundraising Efficiency</th>
+                <th>Working Capital Ratio</th>
+                <th>Program Expenses Growth</th>
+                <th>Liabilities to Assets</th>
+              </tr>
+            </thead>
+          <tbody>
+            <tr>
+              <td aria-label="Program Expenses">74.2%</td>
+              <td aria-label="Administrative Expenses">6.1%</td>
+              <td aria-label="Fundraising Expenses">19.5%</td>
+              <td aria-label="Fundraising Efficiency">$.20</td>
+              <td aria-label="Working Capital Ratio">1.30 Years</td>
+              <td aria-label="Program Expenses Growth">4.4%</td>
+              <td aria-label="Liabilities to Assets">30.1%</td>
+            </tr>
+
+          </tbody>
+          </table>
+
+          <p><img class="bowling" src="img/bowling.jpg" alt="Bowling Alley"></p>
+          <p><img class="pins" src="img/pins.png" alt="Bowling"></p>
+
     </section>
 
     <section id="signup">
-      <p>Sign up for bowling tonight! Only an admission of 5$ per person.
+      <h2><p>Sign up for bowling tonight! Only an admission of 5$ per person.
         We will be providing bowling shoes and bowling balls.</p>
 
-      <p>The event will be on the 15th of December starting at 7:00PM to 11:59PM.</p>
+      <p>The event will be downtown Greenville on the 15th of December starting from 7:00PM to 11:59PM.</p>
 
-      <p>Please fill out this information and contact us @bowlingcharityWWF</p>
+      <p>Please fill out this information for your free shirt (optional, any extra shirts will be 10$ per)
+        and contact us @bowlingcharityWWF</p></h2>
 
-      <p>First name:
-      Last name:
-      Phone Number:
-      # Guests:
-      Guest names:
-      Guest last names:</p>
-
+  <form class="pure-form" action="thanks.html" method="post">
+    <fieldset>
+        <legend><b>Shipping Information</b></legend>
+        <input type="text" placeholder="Name">
+        <input type="text" placeholder="Address">
+        <input type="text" placeholder="City">
+        <input type="text" placeholder="State">
+        <input type="text" placeholder="Zip Code">
+        <input type="text" placeholder="Email">
+        <input type="text" placeholder="Phone Number">
+        <label for="remember">
+        <p><input id="remember" type="checkbox"> Remember me</p>
+        </label>
+     </fieldset>
+   <fieldset>
+   <legend><b>Item Description:</b></legend>
+   <select name="Size:">
+   <option value="small">Small</option>
+   <option value="medium">Medium</option>
+   <option value="large">Large</option>
+   </select>
+   Quantity:
+   <input type="text" name="quantity" maxlength="5" size="5"><br><br>
+ </fieldset>
+ <fieldset>
+   <legend><b>Credit Card Information:</b></legend>
+   Card Type:
+   <input type="radio" name="cardtype" value="visa">Visa
+   <input type="radio" name="cardtype" value="mastercard">Master Card
+   <input type="radio" name="cardtype" value="discover">Discover<br>
+   Credit Card Number:
+   <input type="text" name="creditcardnumber"><br>
+   <button type="submit" class="pure-button pure-button-primary">Order</button>
+ </fieldset>
+ </form>
     </section>
 
     <footer>
