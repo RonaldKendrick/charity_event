@@ -77,46 +77,60 @@
 
       <p>Please fill out this information for your free shirt (optional, any extra shirts will be 10$ per)
         and contact us @bowlingcharityWWF</p></h2>
-
-  <form class="pure-form" action="thanks.html" method="post">
-    <fieldset>
-        <legend><b>Shipping Information</b></legend>
-        <input type="text" placeholder="Name">
-        <input type="text" placeholder="Address">
-        <input type="text" placeholder="City">
-        <input type="text" placeholder="State">
-        <input type="text" placeholder="Zip Code">
-        <input type="text" placeholder="Email">
-        <input type="text" placeholder="Phone Number">
-        <label for="remember">
-        <p><input id="remember" type="checkbox"> Remember me</p>
-        </label>
-     </fieldset>
-   <fieldset>
-   <legend><b>Item Description:</b></legend>
-   <select name="Size:">
-   <option value="small">Small</option>
-   <option value="medium">Medium</option>
-   <option value="large">Large</option>
-   </select>
-   Quantity:
-   <input type="text" name="quantity" maxlength="5" size="5"><br><br>
- </fieldset>
- <fieldset>
-   <legend><b>Credit Card Information:</b></legend>
-   Card Type:
-   <input type="radio" name="cardtype" value="visa">Visa
-   <input type="radio" name="cardtype" value="mastercard">Master Card
-   <input type="radio" name="cardtype" value="discover">Discover<br>
-   Credit Card Number:
-   <input type="text" name="creditcardnumber"><br>
-   <button type="submit" class="pure-button pure-button-primary">Order</button>
- </fieldset>
- </form>
+      <form class="pure-form"  action="thanks.html" method="post">
+        <fieldset>
+          <legend>Shipping Information</legend>
+            <label for="name">Name:</label>
+              <input id="name" type="text" name="name">
+                <br>
+            <label for="address">Address:</label>
+              <input id="address" type="text" name="address">
+                <br>
+            <label for="city">City:</label>
+              <input id="city" type="text" name="city">
+            <label for="state">State:</label>
+              <input id="state" type="text" name="state" maxlength="2" size="2">
+              <br>
+            <label for="zip">Zip:</label>
+              <input id="zip" type="text" name="zip" maxlength="3" size="3">
+                <br><br>
+         </fieldset>
+         <fieldset>
+           <legend>Item Description</legend>
+            <label for="size">Size:</label>
+            <select id="size" name="size">
+              <option value="small">Small</option>
+              <option value="medium">Medium</option>
+              <option value="large">Large</option>
+            </select>
+            <br>
+            <label for="quantity">Quantity:</label>
+              <input id="quantity" type="text" name="quantity" maxlength="5" size="5">
+              <br><br>
+            </fieldset>
+            <fieldset>
+              <legend>Credit Card Information</legend>
+                Card Type:
+                  <input id="visa" type="radio" name="card" value="Visa">
+                    <label for="visa">Visa</label>
+                  <input id="mastercard" type="radio" name="card" value="MasterCard">
+                    <label for="mastercard">Master Card</label>
+                  <input id="discover" type="radio" name="card" value="Discover">
+                    <label for="discover">Discover</label>
+                    <br>
+              <label for="cardnumber">Card Number:</label>
+                <input id="cardnumber" type="text" name="cardnumber">
+                <br><br>
+                <fieldset>
+                   <button type="submit" class="pure-button pure-button-primary">Sign in</button>
+                    <label for="remember" class="pure-checkbox">
+                      <input id="remember" type="checkbox"> Remember me
+                    </label>
+                  </form>
     </section>
 
     <footer>
-      <p>This event is fictious and only used for web design project. Made by Kevin<b>
+      <p>This event is fictious and only used for web design project. Made by Kevin.<b>
     </footer>
 
   </div>
